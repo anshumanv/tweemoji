@@ -27,5 +27,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "emoji-mart": "^2.11.1",
+    "react-share": "^3.0.0"
   }
 }
