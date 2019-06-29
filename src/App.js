@@ -19,7 +19,7 @@ function App() {
         </div>
       </div>
       <div className="right">
-        <textarea placeholder="Type a sentence" type="text" onChange={e => setText(e.target.value)} value={text}/>
+        <textarea placeholder="Your tweet here ..." type="text" onChange={e => setText(e.target.value)} value={text}/>
         <div className="res">{formattedText}</div>
         <ReactSimpleTooltip
           arrow={15}
