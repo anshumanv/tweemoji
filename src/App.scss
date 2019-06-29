@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.left {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .current {
+    @media screen and (max-width: 768px) {
+      order: -1;
+    }
+    margin: 2rem 0 1rem 0;
+  }
+  @media screen and (max-width: 768px) {
+    order: 1;
+  }
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+  .res {
+    margin-bottom: 2rem;
+    max-width: 40vw;
+    @media screen and (max-width: 768px) {
+      width: 80vw;
+    }
+  }
+  textarea {
+    width: 40vw;
+    font-size: calc(10px + 2vmin);
+    font-family: inherit;
+    margin: 2rem 0 2rem 0;
+    @media screen and (max-width: 768px) {
+      width: 80vw;
+    }
+  }
+  .tweet {
+    margin-bottom: 2rem;
+  }
+}
+
